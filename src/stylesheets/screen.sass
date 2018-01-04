@@ -1,0 +1,64 @@
+$blue: #78AFC2
+$yellow: #F0D894
+$red: #800
+
+body
+  position: relative
+  font-family: 'Lato', sans-serif
+  background-size: 100%
+  background-color: $yellow
+
+#bluestrip
+  background-color: $blue
+  height: 150px
+
+#whitestrip
+  background-color: white
+  height: 10px
+
+#yellowstrip
+  background: linear-gradient(#DD9D6B, $yellow)
+  height: 200px
+
+#main
+  position: absolute
+  margin: auto
+  top: 30px
+  left: 0
+  right: 0
+  width: 1000px
+
+  .container
+    background-color: white
+
+#title
+  padding: 10px
+  border-bottom: 1px solid #92c1d0
+  h1
+    color: $red
+    font-weight: 500
+    font-size: 2rem
+    margin-bottom: 15px
+  h2
+    color: #535353
+    font-weight: 400
+    font-size: 1.4rem
+    line-height: 1.6rem
+  img
+    width: 100%
+
+#menu
+  padding: 10px
+  border-right: solid 1px $blue
+
+  li
+    a
+      color: $red
+      font-size: 13px
+      font-weight: 400
+
+    &.active a
+      font-weight: 500
+
+#content
+  padding: 10px

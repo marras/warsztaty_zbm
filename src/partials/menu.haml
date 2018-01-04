@@ -1,0 +1,5 @@
+#main-menu{class: @file}
+  %ul.nav.nav-pills.nav-justified.flex-column
+    - %w(strona_główna informacje_praktyczne kontakt program rejestracja uczestnicy wyżywienie).each do |w|
+      %li{class: (@file==w ? 'active' : '')}= link w.capitalize.gsub(/_/, ' ')
+
