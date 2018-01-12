@@ -3,7 +3,7 @@
     - %w(homepage payment_info abstracts program register participants).each do |w|
       - if w == 'homepage'
         %li{class: (@file=='index' ? 'active' : '')}
-          = link w.capitalize.gsub(/_/, ' '), '/'
+          = link w.capitalize.gsub(/_/, ' '), 'index.html'
       - else
         %li{class: (@file==w ? 'active' : '')}
           = link w.capitalize.gsub(/_/, ' ')
