@@ -1,6 +1,6 @@
 #main-menu{class: @file}
   %ul.nav.nav-pills.nav-justified.flex-column
-    - %w(homepage payment_info abstracts program_and_venue register participants).each do |w|
+    - %w(homepage payment_&_info abstracts program_and_venue register participants).each do |w|
       - if w == 'homepage'
         %li{class: (@file=='index' ? 'active' : '')}
           = link w.capitalize.gsub(/_/, ' '), 'index.html'
